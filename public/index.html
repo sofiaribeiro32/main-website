@@ -7,21 +7,79 @@
         <!-- CSS -->
         <link href="./css/styles.css" rel="stylesheet" />
 
+        <!--Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+
         <title>Best Lisbon</title>
     </head>
-    <body>
+    <body class="bg-gradient-to-r from-green-500 to-emerald-500 text-white">
         <nav>
-            <div>
-                <a href="./index.html">Logo</a>
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./index.html">About Us</a></li>
-                    <li><a href="./index.html">Team</a></li>
-                    <li><a href="./index.html">Our Events</a></li>
-                    <li><a href="./index.html">Flag</a></li>
-                </ul>
+            <div
+                class="bg-gray-300 bg-opacity-20 max-w-7xl p-4 mx-auto my-6 text-xl font-semibold"
+            >
+                <div class="flex justify-between items-center">
+                    <div>
+                        <a href="./index.html"
+                            ><img
+                                class="w-36"
+                                src="./images/logos/best_lisbon.png"
+                                alt=""
+                        /></a>
+                    </div>
+                    <div class="hidden lg:flex space-x-12 items-center">
+                        <div
+                            class="hover:text-gray-200 border-b-4 rounded-b-sm border-white hover:border-gray-200"
+                        >
+                            <a href="./index.html">Home</a>
+                        </div>
+                        <div class="hover:text-gray-200">
+                            <a href="./index.html">About Us</a>
+                        </div>
+                        <div class="hover:text-gray-200">
+                            <a href="./index.html">Team</a>
+                        </div>
+                        <div
+                            class="bg-white rounded-md py-1 px-3 hover:scale-105 transition-transform"
+                        >
+                            <a
+                                class="text-emerald-500 flex items-center space-x-2"
+                                href="./index.html"
+                            >
+                                <p>Our Events</p>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="h-7 w-7 fill-emerald-500"
+                                    viewBox="0 0 20 20"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        cdivp-rule="evenodd"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="hover:scale-105 transition-transform">
+                            <a href="./index.html"
+                                ><img
+                                    class="w-10 rounded-sm"
+                                    src="./images/flags/eng_flag.png"
+                                    alt=""
+                            /></a>
+                        </div>
+                    </div>
+                    <!--Mobile Button-->
+                    <div class="lg:hidden"></div>
+                    <!-- Criar uma side bar-->
+                </div>
             </div>
         </nav>
+        <!--
         <main>
             <section id="banner">
                 <div>
@@ -112,7 +170,7 @@
                 <div>
                     <h2>Some of our moments!</h2>
                     <div>
-                        <!--Carousel-->
+                        
                     </div>
                     <h4>Autumn motivational weekend 2021</h4>
                 </div>
@@ -137,5 +195,5 @@
                 </div>
             </div>
         </footer>
-    </body>
+    --></body>
 </html>
