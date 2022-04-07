@@ -19,9 +19,7 @@
     </head>
     <body class="bg-gradient-to-r from-green-500 to-emerald-500 text-white">
         <nav>
-            <div
-                class="bg-gray-300 bg-opacity-20 max-w-7xl p-4 mx-auto my-6 text-xl font-semibold"
-            >
+            <div class="max-w-7xl p-4 mx-auto my-6 text-xl font-semibold">
                 <div class="flex justify-between items-center">
                     <div>
                         <a href="./index.html"
@@ -74,8 +72,79 @@
                         </div>
                     </div>
                     <!--Mobile Button-->
-                    <div class="lg:hidden"></div>
-                    <!-- Criar uma side bar-->
+                    <div
+                        class="lg:hidden hover:scale-105 transition-transform"
+                        onclick="toggleSideBar()"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-10 w-10 fill-white ml-20"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                clip-rule="evenodd"
+                            />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <!--SideBar-->
+            <div
+                id="sidebar"
+                class="fixed top-0 bottom-0 w-0 bg-white overflow-y-auto rounded backdrop-blur-3xl origin-left duration-200"
+            >
+                <div class="duration-100">
+                    <img
+                        src="./images/logos/best_lisbon_green.png"
+                        alt="best"
+                        class="w-28 m-7 mb-10"
+                    />
+                    <ul class="text-emerald-500 font-semibold text-2xl ml-8">
+                        <li class="mb-8 px-3 hover:text-green-500">
+                            <a href="./index.html">Home</a>
+                        </li>
+                        <li class="mb-8 px-3 hover:text-green-500">
+                            <a href="./index.html">About Us</a>
+                        </li>
+                        <li class="mb-8 px-3 hover:text-green-500">
+                            <a href="./index.html">Team</a>
+                        </li>
+                        <li
+                            class="bg-emerald-500 rounded-md py-1 px-3 hover:scale-105 transition-transform w-52"
+                        >
+                            <a
+                                class="text-white flex items-center space-x-2"
+                                href="./index.html"
+                            >
+                                <p>Our Events</p>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="h-7 w-7 fill-white"
+                                    viewBox="0 0 20 20"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        cdivp-rule="evenodd"
+                                    />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- flag ainda não funciona bem -->
+                    <div
+                        class="hover:scale-105 transition-transform bottom-10 left-9 fixed"
+                    >
+                        <a href="./index.html"
+                            ><img
+                                class="w-10 rounded-sm"
+                                src="./images/flags/eng_flag.png"
+                                alt=""
+                        /></a>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -195,5 +264,8 @@
                 </div>
             </div>
         </footer>
-    --></body>
+    -->
+        <!-- Scripts -->
+        <script src="./js/button_events.js"></script>
+    </body>
 </html>
