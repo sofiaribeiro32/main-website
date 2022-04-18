@@ -7,3 +7,8 @@
         font-family: "Montserrat", sans-serif;
     }
 }
+
+.svg-border {
+    filter: drop-shadow(0 -1px 0px white) drop-shadow(0 -1px 0px white)
+        drop-shadow(0 2px 0px white) drop-shadow(0 2px 0px white);
+}
