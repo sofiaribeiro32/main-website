@@ -530,6 +530,41 @@ body {
   margin-bottom: 2.75rem;
 }
 
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.my-7 {
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
+}
+
+.my-0 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.my-1 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.mx-5 {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .ml-20 {
   margin-left: 5rem;
 }
@@ -542,20 +577,28 @@ body {
   margin-bottom: 2rem;
 }
 
-.mb-48 {
-  margin-bottom: 12rem;
+.mb-12 {
+  margin-bottom: 3rem;
 }
 
 .mt-0 {
   margin-top: 0px;
 }
 
-.mb-24 {
-  margin-bottom: 6rem;
+.mb-3 {
+  margin-bottom: 0.75rem;
 }
 
-.mb-12 {
-  margin-bottom: 3rem;
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.mt-40 {
+  margin-top: 10rem;
+}
+
+.mt-28 {
+  margin-top: 7rem;
 }
 
 .flex {
@@ -586,8 +629,8 @@ body {
   height: 13rem;
 }
 
-.h-28 {
-  height: 7rem;
+.h-40 {
+  height: 10rem;
 }
 
 .w-36 {
@@ -610,28 +653,28 @@ body {
   width: 13rem;
 }
 
-.w-72 {
-  width: 18rem;
-}
-
 .w-40 {
   width: 10rem;
+}
+
+.w-56 {
+  width: 14rem;
 }
 
 .w-44 {
   width: 11rem;
 }
 
+.w-72 {
+  width: 18rem;
+}
+
+.w-5 {
+  width: 1.25rem;
+}
+
 .w-32 {
   width: 8rem;
-}
-
-.w-28 {
-  width: 7rem;
-}
-
-.w-56 {
-  width: 14rem;
 }
 
 .max-w-7xl {
@@ -640,6 +683,18 @@ body {
 
 .max-w-5xl {
   max-width: 64rem;
+}
+
+.max-w-6xl {
+  max-width: 72rem;
+}
+
+.max-w-3xl {
+  max-width: 48rem;
+}
+
+.max-w-2xl {
+  max-width: 42rem;
 }
 
 .origin-left {
@@ -654,12 +709,12 @@ body {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.content-center {
-  align-content: center;
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .content-evenly {
@@ -670,24 +725,12 @@ body {
   align-items: center;
 }
 
-.justify-center {
-  justify-content: center;
-}
-
 .justify-between {
   justify-content: space-between;
 }
 
 .justify-items-center {
   justify-items: center;
-}
-
-.gap-4 {
-  gap: 1rem;
-}
-
-.gap-20 {
-  gap: 5rem;
 }
 
 .gap-8 {
@@ -817,8 +860,8 @@ body {
   text-align: center;
 }
 
-.align-baseline {
-  vertical-align: baseline;
+.text-justify {
+  text-align: justify;
 }
 
 .text-xl {
@@ -834,6 +877,11 @@ body {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .font-semibold {
@@ -860,6 +908,21 @@ body {
 .text-emerald-500 {
   --tw-text-opacity: 1;
   color: rgb(16 185 129 / var(--tw-text-opacity));
+}
+
+.text-green-500 {
+  --tw-text-opacity: 1;
+  color: rgb(34 197 94 / var(--tw-text-opacity));
+}
+
+.text-green-400 {
+  --tw-text-opacity: 1;
+  color: rgb(74 222 128 / var(--tw-text-opacity));
+}
+
+.text-green-600 {
+  --tw-text-opacity: 1;
+  color: rgb(22 163 74 / var(--tw-text-opacity));
 }
 
 .opacity-0 {
@@ -907,26 +970,24 @@ body {
 }
 
 @media (min-width: 640px) {
-  .sm\:grid-cols-1 {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
+  .sm\:my-7 {
+    margin-top: 1.75rem;
+    margin-bottom: 1.75rem;
   }
 
-  .sm\:gap-8 {
-    gap: 2rem;
+  .sm\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 }
 
 @media (min-width: 768px) {
+  .md\:my-1 {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .md\:justify-center {
-    justify-content: center;
-  }
-
-  .md\:justify-items-center {
-    justify-items: center;
   }
 
   .md\:gap-14 {
@@ -941,6 +1002,16 @@ body {
   .md\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 
@@ -964,6 +1035,22 @@ body {
     margin-top: 3rem;
   }
 
+  .lg\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
+  .lg\:mb-3 {
+    margin-bottom: 0.75rem;
+  }
+
+  .lg\:mt-40 {
+    margin-top: 10rem;
+  }
+
+  .lg\:block {
+    display: block;
+  }
+
   .lg\:flex {
     display: flex;
   }
@@ -980,12 +1067,8 @@ body {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
-  .lg\:justify-center {
-    justify-content: center;
-  }
-
-  .lg\:justify-items-center {
-    justify-items: center;
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .lg\:gap-20 {
@@ -998,5 +1081,9 @@ body {
 
   .lg\:text-left {
     text-align: left;
+  }
+
+  .lg\:text-justify {
+    text-align: justify;
   }
 }
