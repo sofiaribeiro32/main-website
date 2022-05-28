@@ -472,6 +472,40 @@ body {
   --tw-backdrop-sepia:  ;
 }
 
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
 .fixed {
   position: fixed;
 }
@@ -541,11 +575,6 @@ body {
 .my-7 {
   margin-top: 1.75rem;
   margin-bottom: 1.75rem;
-}
-
-.my-32 {
-  margin-top: 8rem;
-  margin-bottom: 8rem;
 }
 
 .my-3 {
@@ -633,10 +662,6 @@ body {
 
 .max-h-40 {
   max-height: 10rem;
-}
-
-.max-h-36 {
-  max-height: 9rem;
 }
 
 .w-36 {
@@ -956,6 +981,12 @@ body {
   opacity: 0;
 }
 
+.shadow {
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .transition-transform {
   transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -973,6 +1004,11 @@ body {
 .svg-border {
   filter: drop-shadow(0 -1px 0px white) drop-shadow(0 -1px 0px white)
         drop-shadow(0 2px 0px white) drop-shadow(0 2px 0px white);
+}
+
+.swiper {
+  max-width: 500px;
+  max-height: 400px;
 }
 
 .hover\:scale-105:hover {
