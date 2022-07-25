@@ -1,368 +1,339 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!-- CSS -->
-        <link href="./css/styles.css" rel="stylesheet" />
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!--Fonts-->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-            rel="stylesheet"
-        />
+    <!-- CSS -->
+    <link href="./css/styles.css" rel="stylesheet" />
 
-        <title>Best Lisbon - About Us</title>
-    </head>
-    <body class="bg-gradient-to-r from-green-500 to-emerald-500 text-white">
-        <!-- Navigation Bar and Side Bar -->
-        <nav>
-            <div
-                class="max-w-7xl p-7 mx-auto lg:my-7 my-2 text-xl font-semibold"
-            >
-                <div class="flex justify-between items-center">
-                    <div>
-                        <a href="./index.html"
-                            ><img
-                                class="w-36"
-                                src="./images/logos/best_lisbon.png"
-                                alt=""
-                        /></a>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+
+    <title>Best Lisbon - About Us</title>
+</head>
+
+<body class="bg-gradient-to-r from-green-500 to-emerald-500 text-white">
+    <!-- Navigation Bar and Side Bar -->
+    <nav>
+        <div class="max-w-7xl p-7 mx-auto lg:my-7 my-2 text-xl font-semibold">
+            <div class="flex justify-between items-center">
+                <div>
+                    <a href="./index.html"><img class="w-36" src="./images/logos/best_lisbon.png" alt="" /></a>
+                </div>
+                <div class="hidden lg:flex space-x-12 items-center">
+                    <div class="hover:text-gray-200">
+                        <a href="./index.html">Home</a>
                     </div>
-                    <div class="hidden lg:flex space-x-12 items-center">
-                        <div class="hover:text-gray-200">
-                            <a href="./index.html">Home</a>
-                        </div>
-                        <div class="hover:text-gray-200">
-                            <a href="./about_us.html">About Us</a>
-                        </div>
-                        <div
-                            class="hover:text-gray-200 border-b-4 rounded-b-sm border-white hover:border-gray-200"
-                        >
-                            <a href="./team.html">Team</a>
-                        </div>
-                        <div
-                            class="bg-white rounded-md py-1 px-3 hover:scale-105 transition-transform"
-                        >
-                            <a
-                                class="text-emerald-500 flex items-center space-x-2"
-                                href="./index.html"
-                            >
-                                <p>Our Events</p>
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    class="h-7 w-7 fill-emerald-500"
-                                    viewBox="0 0 20 20"
-                                >
-                                    <path
-                                        fill-rule="evenodd"
-                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                        cdivp-rule="evenodd"
-                                    />
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="hover:scale-105 transition-transform">
-                            <a href="./index.html"
-                                ><img
-                                    class="w-10 rounded-sm"
-                                    src="./images/flags/eng_flag.png"
-                                    alt=""
-                            /></a>
-                        </div>
+                    <div class="hover:text-gray-200">
+                        <a href="./about_us.html">About Us</a>
                     </div>
-                    <!--Mobile Button-->
-                    <div
-                        class="lg:hidden hover:scale-105 transition-transform"
-                        onclick="toggleSideBar()"
-                    >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="h-10 w-10 fill-white ml-20"
-                            viewBox="0 0 20 20"
-                            fill="currentColor"
-                        >
-                            <path
-                                fill-rule="evenodd"
-                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                                clip-rule="evenodd"
-                            />
-                        </svg>
+                    <div class="hover:text-gray-200 border-b-4 rounded-b-sm border-white hover:border-gray-200">
+                        <a href="./team.html">Team</a>
+                    </div>
+                    <div class="bg-white rounded-md py-1 px-3 hover:scale-105 transition-transform">
+                        <a class="text-emerald-500 flex items-center space-x-2" href="./index.html">
+                            <p>Our Events</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 fill-emerald-500"
+                                viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                    cdivp-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="hover:scale-105 transition-transform">
+                        <a href="./index.html"><img class="w-10 rounded-sm" src="./images/flags/eng_flag.png"
+                                alt="" /></a>
                     </div>
                 </div>
-            </div>
-
-            <!--SideBar-->
-            <div
-                id="sidebar"
-                class="fixed overflow-hidden top-0 bottom-0 w-0 bg-white overflow-y-auto rounded origin-left duration-200"
-            >
-                <div class="duration-100">
-                    <img
-                        src="./images/logos/best_lisbon_green.png"
-                        alt="best"
-                        class="w-36 mx-7 lg:my-14 my-9"
-                    />
-
-                    <ul class="text-emerald-500 font-semibold text-2xl ml-8">
-                        <li class="mb-8 px-3 hover:text-green-500">
-                            <a href="./index.html">Home</a>
-                        </li>
-                        <li class="mb-8 px-3 hover:text-green-500">
-                            <a href="./index.html">About Us</a>
-                        </li>
-                        <li class="mb-8 px-3 hover:text-green-500">
-                            <a href="./index.html">Team</a>
-                        </li>
-                        <li
-                            class="bg-emerald-500 rounded-md py-1 px-3 hover:scale-105 transition-transform w-52"
-                        >
-                            <a
-                                class="text-white flex items-center space-x-2"
-                                href="./index.html"
-                            >
-                                <p>Our Events</p>
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    class="h-7 w-7 fill-white"
-                                    viewBox="0 0 20 20"
-                                >
-                                    <path
-                                        fill-rule="evenodd"
-                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                        cdivp-rule="evenodd"
-                                    />
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                    <!-- Flag -->
-                    <div
-                        class="hover:scale-105 transition-transform bottom-10 left-9 absolute"
-                    >
-                        <a href="./index.html"
-                            ><img
-                                class="w-10 rounded-sm"
-                                src="./images/flags/eng_flag.png"
-                                alt=""
-                        /></a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        <main>
-            <section id="quote">
-                <div class="mx-auto mt-20 py-8 px-10 max-w-4xl">
-                    <h1 class="text-left text-5xl font-semibold">
-                        Alone we can do so little, together we can do so much.
-                    </h1>
-                    <h3 class="text-right text-xl font-normal mt-10">
-                        - Helen keller
-                    </h3>
-                </div>
-                <!-- Divider Top -->
-                <div class="svg-border">
-                    <svg
-                        data-name="Layer 1"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 1200 120"
-                        preserveAspectRatio="none"
-                    >
-                        <path
-                            d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
-                            class="fill-white"
-                        ></path>
+                <!--Mobile Button-->
+                <div class="lg:hidden hover:scale-105 transition-transform" onclick="toggleSideBar()">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 fill-white ml-20" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd" />
                     </svg>
                 </div>
-            </section>
-            <section id="best-board">
-                <div class="bg-white">
-                    <div class="max-w-5xl text-center mx-auto py-4">
-                        <h1 class="text-green-500 text-2xl font-semibold mb-10">
-                            BEST Lisbon XXXV Board
-                        </h1>
-                        <div class="grid grid-cols-5">
-                            <div>
-                                <img
-                                    src="./images/change.png"
-                                    alt=""
-                                    class="rounded-full"
-                                />
-                                <h2
-                                    class="text-green-600 font-semibold text-lg mt-2"
-                                >
-                                    João Martins
-                                </h2>
-                                <h3
-                                    class="text-green-500 font-semibold text-md"
-                                >
-                                    President
-                                </h3>
-                            </div>
-                            <div>
-                                <img
-                                    src="./images/change.png"
-                                    alt=""
-                                    class="rounded-full"
-                                />
-                                <h2
-                                    class="text-green-600 font-semibold text-lg mt-2"
-                                >
-                                    Duarte Costa
-                                </h2>
-                                <h3
-                                    class="text-green-500 font-semibold text-md"
-                                >
-                                    Secretary
-                                </h3>
-                            </div>
-                            <div>
-                                <img
-                                    src="./images/change.png"
-                                    alt=""
-                                    class="rounded-full"
-                                />
-                                <h2
-                                    class="text-green-600 font-semibold text-lg mt-2"
-                                >
-                                    Diana Castaneda
-                                </h2>
-                                <h3
-                                    class="text-green-500 font-semibold text-md"
-                                >
-                                    Treasurer
-                                </h3>
-                            </div>
-                            <div>
-                                <img
-                                    src="./images/change.png"
-                                    alt=""
-                                    class="rounded-full"
-                                />
-                                <h2
-                                    class="text-green-600 font-semibold text-lg mt-2"
-                                >
-                                    Nuno Lopes
-                                </h2>
-                                <h3
-                                    class="text-green-500 font-semibold text-md"
-                                >
-                                    Vice President For External Services
-                                </h3>
-                            </div>
-                            <div>
-                                <img
-                                    src="./images/change.png"
-                                    alt=""
-                                    class="rounded-full"
-                                />
-                                <h2
-                                    class="text-green-600 font-semibold text-lg mt-2"
-                                >
-                                    Rodrigo Trindade
-                                </h2>
-                                <h3
-                                    class="text-green-500 font-semibold text-md"
-                                >
-                                    Vice President For Human Resources
-                                </h3>
-                            </div>
-                        </div>
-                    </div>
+            </div>
+        </div>
+
+        <!--SideBar-->
+        <div id="sidebar"
+            class="fixed overflow-hidden top-0 bottom-0 w-0 bg-white overflow-y-auto rounded origin-left duration-200">
+            <div class="duration-100">
+                <img src="./images/logos/best_lisbon_green.png" alt="best" class="w-36 mx-7 lg:my-14 my-9" />
+
+                <ul class="text-emerald-500 font-semibold text-2xl ml-8">
+                    <li class="mb-8 px-3 hover:text-green-500">
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li class="mb-8 px-3 hover:text-green-500">
+                        <a href="./index.html">About Us</a>
+                    </li>
+                    <li class="mb-8 px-3 hover:text-green-500">
+                        <a href="./index.html">Team</a>
+                    </li>
+                    <li class="bg-emerald-500 rounded-md py-1 px-3 hover:scale-105 transition-transform w-52">
+                        <a class="text-white flex items-center space-x-2" href="./index.html">
+                            <p>Our Events</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 fill-white" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                    cdivp-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <!-- Flag -->
+                <div class="hover:scale-105 transition-transform bottom-10 left-9 absolute">
+                    <a href="./index.html"><img class="w-10 rounded-sm" src="./images/flags/eng_flag.png" alt="" /></a>
                 </div>
-                <!-- Divider Bottom -->
-                <div class="svg-border" style="transform: rotate(180deg)">
-                    <svg
-                        data-name="Layer 1"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 1200 120"
-                        preserveAspectRatio="none"
-                    >
-                        <path
-                            d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
-                            class="fill-white"
-                        ></path>
-                    </svg>
-                </div>
-            </section>
-            <section id="best-coordinators">
-                <div class="max-w-5xl text-center mx-auto">
-                    <h1 class="text-white text-2xl font-semibold mb-10">
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section id="quote">
+            <div class="mx-auto mt-20 py-8 px-10 max-w-4xl">
+                <h1 class="text-left text-5xl font-semibold">
+                    Alone we can do so little, together we can do so much.
+                </h1>
+                <h3 class="text-right text-xl font-normal mt-10">
+                    - Helen keller
+                </h3>
+            </div>
+            <!-- Divider Top -->
+            <div class="svg-border">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
+                        class="fill-white"></path>
+                </svg>
+            </div>
+        </section>
+        <section id="best-board">
+            <div class="bg-white">
+                <div class="max-w-5xl text-center mx-auto py-4">
+                    <h1 class="text-green-500 text-2xl font-semibold mb-10">
                         BEST Lisbon XXXV Board
                     </h1>
-                    <div class="grid grid-cols-4">
+                    <div class="grid grid-cols-5">
                         <div>
-                            <img
-                                src="./images/change.png"
-                                alt=""
-                                class="rounded-full"
-                            />
-                            <h2 class="text-white font-semibold text-lg mt-2">
-                                João Martins
+                            <img src="./images/change.png" alt="" class="rounded-full" />
+                            <h2 class="text-green-600 font-semibold text-lg mt-2">
+                                André Ribeiro
                             </h2>
-                            <h3 class="text-white font-semibold text-md">
+                            <h3 class="text-green-500 font-semibold text-md">
                                 President
                             </h3>
                         </div>
                         <div>
-                            <img
-                                src="./images/change.png"
-                                alt=""
-                                class="rounded-full"
-                            />
-                            <h2 class="text-white font-semibold text-lg mt-2">
-                                Duarte Costa
+                            <img src="./images/change.png" alt="" class="rounded-full" />
+                            <h2 class="text-green-600 font-semibold text-lg mt-2">
+                                Sara Cotrim
                             </h2>
-                            <h3 class="text-white font-semibold text-md">
+                            <h3 class="text-green-500 font-semibold text-md">
                                 Secretary
                             </h3>
                         </div>
                         <div>
-                            <img
-                                src="./images/change.png"
-                                alt=""
-                                class="rounded-full"
-                            />
-                            <h2 class="text-white font-semibold text-lg mt-2">
-                                Diana Castaneda
+                            <img src="./images/change.png" alt="" class="rounded-full" />
+                            <h2 class="text-green-600 font-semibold text-lg mt-2">
+                                Rodrigo Anjos
                             </h2>
-                            <h3 class="text-white font-semibold text-md">
+                            <h3 class="text-green-500 font-semibold text-md">
                                 Treasurer
                             </h3>
                         </div>
                         <div>
-                            <img
-                                src="./images/change.png"
-                                alt=""
-                                class="rounded-full"
-                            />
-                            <h2 class="text-white font-semibold text-lg mt-2">
-                                Nuno Lopes
+                            <img src="./images/change.png" alt="" class="rounded-full" />
+                            <h2 class="text-green-600 font-semibold text-lg mt-2">
+                                Joana Nunes
                             </h2>
-                            <h3 class="text-white font-semibold text-md">
+                            <h3 class="text-green-500 font-semibold text-md">
                                 Vice President For External Services
+                            </h3>
+                        </div>
+                        <div>
+                            <img src="./images/change.png" alt="" class="rounded-full" />
+                            <h2 class="text-green-600 font-semibold text-lg mt-2">
+                                Matilda Santana
+                            </h2>
+                            <h3 class="text-green-500 font-semibold text-md">
+                                Vice President For Human Resources
                             </h3>
                         </div>
                     </div>
                 </div>
-                <!-- Divider Top -->
-                <div class="svg-border">
-                    <svg
-                        data-name="Layer 1"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 1200 120"
-                        preserveAspectRatio="none"
-                    >
-                        <path
-                            d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
-                            class="fill-white"
-                        ></path>
-                    </svg>
+            </div>
+            <!-- Divider Bottom -->
+            <div class="svg-border" style="transform: rotate(180deg)">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
+                        class="fill-white"></path>
+                </svg>
+            </div>
+        </section>
+        <section id="best-coordinators">
+            <div class="max-w-5xl text-center mx-auto">
+                <h1 class="text-white text-2xl font-semibold mb-10">
+                    Coordinators
+                </h1>
+                <div class="grid grid-cols-4">
+                    <div>
+                        <img src="./images/change.png" alt="" class="rounded-full" />
+                        <h2 class="text-white font-semibold text-lg mt-2">
+                            Diogo Silva
+                        </h2>
+                        <h3 class="text-white font-semibold text-md">
+                            Information Technologies
+                        </h3>
+                    </div>
+                    <div>
+                        <img src="./images/change.png" alt="" class="rounded-full" />
+                        <h2 class="text-white font-semibold text-lg mt-2">
+                            Sara Cotrim
+                        </h2>
+                        <h3 class="text-white font-semibold text-md">
+                            Public Relations
+                        </h3>
+                    </div>
+                    <div>
+                        <img src="./images/change.png" alt="" class="rounded-full" />
+                        <h2 class="text-white font-semibold text-lg mt-2">
+                            Marta Martinho
+                        </h2>
+                        <h3 class="text-white font-semibold text-md">
+                            Corporate Relations
+                        </h3>
+                    </div>
+                    <div>
+                        <img src="./images/change.png" alt="" class="rounded-full" />
+                        <h2 class="text-white font-semibold text-lg mt-2">
+                            Daniela Almeida
+                        </h2>
+                        <h3 class="text-white font-semibold text-md">
+                            Design
+                        </h3>
+                    </div>
                 </div>
-            </section>
-        </main>
-    </body>
+            </div>
+            <!-- Divider Top -->
+            <div class="svg-border">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
+                        class="fill-white"></path>
+                </svg>
+            </div>
+        </section>
+        <section id="best-gat">
+            <div class="bg-white">
+                <div class="max-w-5xl text-center mx-auto py-4">
+                    <h1 class="text-green-500 text-2xl font-semibold mb-10">
+                        General Assembly Table
+                    </h1>
+                    <div class="grid grid-cols-5">
+                        <div></div>
+                        <div>
+                            <img src="./images/change.png" alt="" class="rounded-full" />
+                            <h2 class="text-green-600 font-semibold text-lg mt-2">
+                                Miguel Grácio
+                            </h2>
+                            <h3 class="text-green-500 font-semibold text-md">
+                                President
+                            </h3>
+                        </div>
+                        <div>
+                            <img src="./images/change.png" alt="" class="rounded-full" />
+                            <h2 class="text-green-600 font-semibold text-lg mt-2">
+                                Duarte Costa
+                            </h2>
+                            <h3 class="text-green-500 font-semibold text-md">
+                                Vice President
+                            </h3>
+                        </div>
+                        <div>
+                            <img src="./images/change.png" alt="" class="rounded-full" />
+                            <h2 class="text-green-600 font-semibold text-lg mt-2">
+                                Margarida Jardim
+                            </h2>
+                            <h3 class="text-green-500 font-semibold text-md">
+                                Secretary
+                            </h3>
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Divider Bottom -->
+            <div class="svg-border" style="transform: rotate(180deg)">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
+                        class="fill-white"></path>
+                </svg>
+            </div>
+        </section>
+        <section id="best-coordinators">
+            <div class="max-w-5xl text-center mx-auto">
+                <h1 class="text-white text-2xl font-semibold mb-10">
+                    Fiscal Council
+                </h1>
+                <div class="grid grid-cols-5">
+                    <div></div>
+                    <div>
+                        <img src="./images/change.png" alt="" class="rounded-full" />
+                        <h2 class="text-white font-semibold text-lg mt-2">
+                            João Martins
+                        </h2>
+                        <h3 class="text-white font-semibold text-md">
+                            President
+                        </h3>
+                    </div>
+                    <div>
+                        <img src="./images/change.png" alt="" class="rounded-full" />
+                        <h2 class="text-white font-semibold text-lg mt-2">
+                            Diana Castaneda
+                        </h2>
+                        <h3 class="text-white font-semibold text-md">
+                            Vice President
+                        </h3>
+                    </div>
+                    <div>
+                        <img src="./images/change.png" alt="" class="rounded-full" />
+                        <h2 class="text-white font-semibold text-lg mt-2">
+                            Inês Figueiredo
+                        </h2>
+                        <h3 class="text-white font-semibold text-md">
+                            Secretary
+                        </h3>
+                    </div>
+                </div>
+                <div></div>
+            </div>
+            <!-- Divider Top -->
+            <div class="svg-border">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
+                        class="fill-white"></path>
+                </svg>
+            </div>
+        </section>
+    </main>
+</body>
+
 </html>
