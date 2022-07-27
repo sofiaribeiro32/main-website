@@ -1,426 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!-- CSS -->
-        <link href="./css/styles.css" rel="stylesheet" />
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!--Fonts-->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-            rel="stylesheet"
-        />
-        <!-- Swiper -->
-        <link
-            rel="stylesheet"
-            href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-        />
-        <title>Best Lisbon</title>
-    </head>
-    <body class="bg-gradient-to-r from-green-500 to-emerald-500 text-white">
-        <!-- Navigation Bar and Side Bar -->
-        <nav>
-            <div
-                class="max-w-7xl p-7 mx-auto lg:my-7 my-2 text-xl font-semibold"
-            >
-                <div class="flex justify-between items-center">
-                    <div>
-                        <a href="./index.html"
-                            ><img
-                                class="w-36"
-                                src="./images/logos/best_lisbon.png"
-                                alt=""
-                        /></a>
+    <!-- CSS -->
+    <link href="./css/styles.css" rel="stylesheet" />
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <title>Best Lisbon</title>
+</head>
+
+<body class="bg-gradient-to-r from-green-500 to-emerald-500 text-white">
+    <!-- Navigation Bar and Side Bar -->
+    <nav>
+        <div class="max-w-7xl p-7 mx-auto lg:my-7 my-2 text-xl font-semibold">
+            <div class="flex justify-between items-center">
+                <div>
+                    <a href="./index.html"><img class="w-36" src="./images/logos/best_lisbon.png" alt="" /></a>
+                </div>
+                <div class="hidden lg:flex space-x-12 items-center">
+                    <div class="hover:text-gray-200 border-b-4 rounded-b-sm border-white hover:border-gray-200">
+                        <a href="./index.html">Home</a>
                     </div>
-                    <div class="hidden lg:flex space-x-12 items-center">
-                        <div
-                            class="hover:text-gray-200 border-b-4 rounded-b-sm border-white hover:border-gray-200"
-                        >
-                            <a href="./index.html">Home</a>
-                        </div>
-                        <div class="hover:text-gray-200">
-                            <a href="./about_us.html">About Us</a>
-                        </div>
-                        <div class="hover:text-gray-200">
-                            <a href="./team.html">Team</a>
-                        </div>
-                        <div
-                            class="bg-white rounded-md py-1 px-3 hover:scale-105 transition-transform"
-                        >
-                            <a
-                                class="text-emerald-500 flex items-center space-x-2"
-                                href="./index.html"
-                            >
-                                <p>Our Events</p>
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    class="h-7 w-7 fill-emerald-500"
-                                    viewBox="0 0 20 20"
-                                >
-                                    <path
-                                        fill-rule="evenodd"
-                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                        cdivp-rule="evenodd"
-                                    />
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="hover:scale-105 transition-transform">
-                            <a href="./index.html"
-                                ><img
-                                    class="w-10 rounded-sm"
-                                    src="./images/flags/eng_flag.png"
-                                    alt=""
-                            /></a>
-                        </div>
+                    <div class="hover:text-gray-200">
+                        <a href="./about_us.html">About Us</a>
                     </div>
-                    <!--Mobile Button-->
-                    <div
-                        class="lg:hidden hover:scale-105 transition-transform"
-                        onclick="toggleSideBar()"
-                    >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="h-10 w-10 fill-white ml-20"
-                            viewBox="0 0 20 20"
-                            fill="currentColor"
-                        >
-                            <path
-                                fill-rule="evenodd"
-                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                                clip-rule="evenodd"
-                            />
-                        </svg>
+                    <div class="hover:text-gray-200">
+                        <a href="./team.html">Team</a>
                     </div>
+                    <div class="bg-white rounded-md py-1 px-3 hover:scale-105 transition-transform">
+                        <a class="text-emerald-500 flex items-center space-x-2" href="./index.html">
+                            <p>Our Events</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 fill-emerald-500"
+                                viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                    cdivp-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="hover:scale-105 transition-transform">
+                        <a href="./index.html"><img class="w-10 rounded-sm" src="./images/flags/eng_flag.png"
+                                alt="" /></a>
+                    </div>
+                </div>
+                <!--Mobile Button-->
+                <div class="lg:hidden hover:scale-105 transition-transform" onclick="toggleSideBar()">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 fill-white ml-20" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd" />
+                    </svg>
                 </div>
             </div>
+        </div>
 
-            <!--SideBar-->
-            <div
-                id="sidebar"
-                class="fixed overflow-hidden top-0 bottom-0 w-0 bg-white overflow-y-auto rounded origin-left duration-200"
-            >
-                <div class="duration-100">
-                    <img
-                        src="./images/logos/best_lisbon_green.png"
-                        alt="best"
-                        class="w-36 mx-7 lg:my-14 my-9"
-                    />
+        <!--SideBar-->
+        <div id="sidebar"
+            class="fixed overflow-hidden top-0 bottom-0 w-0 bg-white overflow-y-auto rounded origin-left duration-200">
+            <div class="duration-100">
+                <img src="./images/logos/best_lisbon_green.png" alt="best" class="w-36 mx-7 lg:my-14 my-9" />
 
-                    <ul class="text-emerald-500 font-semibold text-2xl ml-8">
-                        <li class="mb-8 px-3 hover:text-green-500">
-                            <a href="./index.html">Home</a>
-                        </li>
-                        <li class="mb-8 px-3 hover:text-green-500">
-                            <a href="./index.html">About Us</a>
-                        </li>
-                        <li class="mb-8 px-3 hover:text-green-500">
-                            <a href="./index.html">Team</a>
-                        </li>
-                        <li
-                            class="bg-emerald-500 rounded-md py-1 px-3 hover:scale-105 transition-transform w-52"
-                        >
-                            <a
-                                class="text-white flex items-center space-x-2"
-                                href="./index.html"
-                            >
-                                <p>Our Events</p>
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    class="h-7 w-7 fill-white"
-                                    viewBox="0 0 20 20"
-                                >
-                                    <path
-                                        fill-rule="evenodd"
-                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                        cdivp-rule="evenodd"
-                                    />
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                    <!-- Flag -->
-                    <div
-                        class="hover:scale-105 transition-transform bottom-10 left-9 absolute"
-                    >
-                        <a href="./index.html"
-                            ><img
-                                class="w-10 rounded-sm"
-                                src="./images/flags/eng_flag.png"
-                                alt=""
-                        /></a>
-                    </div>
+                <ul class="text-emerald-500 font-semibold text-2xl ml-8">
+                    <li class="mb-8 px-3 hover:text-green-500">
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li class="mb-8 px-3 hover:text-green-500">
+                        <a href="./index.html">About Us</a>
+                    </li>
+                    <li class="mb-8 px-3 hover:text-green-500">
+                        <a href="./index.html">Team</a>
+                    </li>
+                    <li class="bg-emerald-500 rounded-md py-1 px-3 hover:scale-105 transition-transform w-52">
+                        <a class="text-white flex items-center space-x-2" href="./index.html">
+                            <p>Our Events</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 fill-white" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                    cdivp-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <!-- Flag -->
+                <div class="hover:scale-105 transition-transform bottom-10 left-9 absolute">
+                    <a href="./index.html"><img class="w-10 rounded-sm" src="./images/flags/eng_flag.png" alt="" /></a>
                 </div>
             </div>
-        </nav>
-        <main>
-            <section id="banner">
-                <div
-                    class="max-w-7xl mx-auto mb-12 lg:p-7 py-3 px-7 lg:mt-12 mt-0"
-                >
-                    <div class="grid lg:grid-cols-10 grid-cols-1">
-                        <div
-                            class="col-span-5 mx-auto my-auto lg:text-left text-center"
-                        >
-                            <h1
-                                class="md:text-4xl text-3xl font-bold uppercase"
-                            >
-                                Grow as a family,<br />
-                                from Lisbon to Europe.
-                            </h1>
-                            <h2 class="md:text-2xl text-xl font-medium">
-                                Empower and Develop Students.
-                            </h2>
-                        </div>
-                        <div class="col-span-5 mx-auto lg:my-auto my-11">
-                            <img
-                                src="./images/people/mw2021.png"
-                                alt="Best motivational weekend"
-                                class="object-cover h-60 border-4 rounded-xl"
-                            />
-                        </div>
-                    </div>
-                </div>
-                <!-- Divider Top -->
-                <div class="svg-border">
-                    <svg
-                        data-name="Layer 1"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 1200 120"
-                        preserveAspectRatio="none"
-                    >
-                        <path
-                            d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
-                            class="fill-white"
-                        ></path>
-                    </svg>
-                </div>
-            </section>
-            <section id="sponsors" class="bg-white">
-                <div class="max-w-5xl mx-auto bg-white px-7 py-2">
-                    <div
-                        class="grid my-7 md:my-1 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 lg:gap-20 md:gap-14 gap-8 items-center content-evenly justify-items-center"
-                    >
-                        <img
-                            class="w-40"
-                            src="./images/logos/ist.png"
-                            alt="ist"
-                        />
-                        <img
-                            class="w-56"
-                            src="./images/logos/ipdj-large.png"
-                            alt="ipdj"
-                        />
-                        <img
-                            class="w-44"
-                            src="./images/logos/santander.png"
-                            alt="santander"
-                        />
-                        <img
-                            class="w-40"
-                            src="./images/logos/fcul.png"
-                            alt="fcul"
-                        />
-                    </div>
-                </div>
-            </section>
-            <section id="about-us">
-                <!-- Divider Bottom -->
-                <div class="svg-border" style="transform: rotate(180deg)">
-                    <svg
-                        data-name="Layer 1"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 1200 120"
-                        preserveAspectRatio="none"
-                    >
-                        <path
-                            d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
-                            class="fill-white"
-                        ></path>
-                    </svg>
-                </div>
-                <div
-                    class="max-w-6xl mx-auto mb-12 lg:p-7 py-3 px-7 lg:mt-10 mt-0"
-                >
-                    <div class="grid lg:grid-cols-10 grid-cols-1">
-                        <div class="col-span-5 mx-auto lg:my-auto">
-                            <img
-                                src="./images/people/three_images.png"
-                                alt="Best motivational weekend"
-                                class="max-h-40 my-3"
-                            />
-                        </div>
-                        <div
-                            class="col-span-5 mx-auto lg:my-auto lg:text-left text-center"
-                        >
-                            <h2 class="lg:mb-3 my-3 text-2xl font-bold mx-10">
-                                A little about us...
-                            </h2>
-                            <p class="text-lg max-w-2xl mx-10">
-                                BEST Lisboa is one of the 90 BEST Local groups
-                                that exist all over Europe. We are a non
-                                governmental, apolitical organization that has
-                                the mission of Empowering Diversity and
-                                Developing Students. Our 5 values: flexibility,
-                                friendship, fun, progress and learning are the
-                                principles that guide our members also known as
-                                BESTies.
-                            </p>
-                        </div>
-                    </div>
-                    <div
-                        class="grid lg:grid-cols-10 grid-cols-1 lg:mt-40 mt-28"
-                    >
-                        <div class="col-span-5 mx-auto lg:my-auto lg:hidden">
-                            <img
-                                src="./images/logos/three_logos.png"
-                                alt="best events"
-                                class="max-h-40 my-3"
-                            />
-                        </div>
-                        <div
-                            class="col-span-5 mx-auto lg:my-auto lg:text-left text-center"
-                        >
-                            <h2 class="lg:mb-3 my-3 text-2xl font-bold mx-10">
-                                Our events
-                            </h2>
-                            <p class="text-lg max-w-2xl mx-10">
-                                BEST organises a set of events that mainly focus
-                                on providing unique experiences to technology
-                                students and on complementing their education in
-                                the perspective that these experiences would
-                                help them in their future career path.
-                                Furthermore, BEST events also have a very strong
-                                international component that cultivates a spirit
-                                of integration and diversity.
-                            </p>
-                        </div>
-                        <div
-                            class="col-span-5 mx-auto lg:my-auto hidden lg:block"
-                        >
-                            <img
-                                src="./images/logos/three_logos.png"
-                                alt="Best motivational weekend"
-                                class=""
-                            />
-                        </div>
-                    </div>
-                </div>
-                <!-- Divider Top -->
-                <div class="svg-border">
-                    <svg
-                        data-name="Layer 1"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 1200 120"
-                        preserveAspectRatio="none"
-                    >
-                        <path
-                            d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
-                            class="fill-white"
-                        ></path>
-                    </svg>
-                </div>
-            </section>
-            <section id="social-media" class="bg-white">
-                <div
-                    class="max-w-5xl mx-auto grid lg:grid-cols-2 grid-cols-1 items-center content-evenly justify-items-center"
-                >
-                    <div class="my-4">
-                        <h2 class="text-green-500 text-2xl font-semibold">
-                            Follow us in our social media:
+        </div>
+    </nav>
+    <main>
+        <section id="banner">
+            <div class="max-w-7xl mx-auto mb-12 lg:p-7 py-3 px-7 lg:mt-12 mt-0">
+                <div class="grid lg:grid-cols-10 grid-cols-1">
+                    <div class="col-span-5 mx-auto my-auto lg:text-left text-center">
+                        <h1 class="md:text-4xl text-3xl font-bold uppercase">
+                            Grow as a family,<br />
+                            from Lisbon to Europe.
+                        </h1>
+                        <h2 class="md:text-2xl text-xl font-medium">
+                            Empower and Develop Students.
                         </h2>
                     </div>
-                    <div class="my-4 grid grid-cols-3 items-center">
-                        <a href="https://www.facebook.com/bestlisboa">
-                            <img
-                                src="./images/logos/facebook.png"
-                                alt="facebook"
-                                class="w-32 hover:scale-105 transition-transform"
-                            />
-                        </a>
-                        <a href="https://www.instagram.com/best.lisbon/">
-                            <img
-                                src="./images/logos/instagram.png"
-                                alt="instagram"
-                                class="w-32 hover:scale-105 transition-transform"
-                            />
-                        </a>
-                        <a
-                            href="https://www.linkedin.com/company/best-lisboa/mycompany/"
-                        >
-                            <img
-                                src="./images/logos/linkedin.png"
-                                alt="linkdin"
-                                class="w-32 hover:scale-105 transition-transform"
-                            />
-                        </a>
+                    <div class="col-span-5 mx-auto lg:my-auto my-11">
+                        <img src="./images/people/mw2021.png" alt="Best motivational weekend"
+                            class="object-cover h-60 border-4 rounded-xl" />
                     </div>
                 </div>
-            </section>
-            <section id="our-moments">
-                <!-- Divider Bottom -->
-                <div class="svg-border" style="transform: rotate(180deg)">
-                    <svg
-                        data-name="Layer 1"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 1200 120"
-                        preserveAspectRatio="none"
-                    >
-                        <path
-                            d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
-                            class="fill-white"
-                        ></path>
-                    </svg>
+            </div>
+            <!-- Divider Top -->
+            <div class="svg-border">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
+                        class="fill-white"></path>
+                </svg>
+            </div>
+        </section>
+        <section id="sponsors" class="bg-white">
+            <div class="max-w-5xl mx-auto bg-white px-7 py-2">
+                <div
+                    class="grid my-7 md:my-1 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 lg:gap-20 md:gap-14 gap-8 items-center content-evenly justify-items-center">
+                    <img class="w-40" src="./images/logos/ist.png" alt="ist" />
+                    <img class="w-56" src="./images/logos/ipdj-large.png" alt="ipdj" />
+                    <img class="w-44" src="./images/logos/santander.png" alt="santander" />
+                    <img class="w-40" src="./images/logos/fcul.png" alt="fcul" />
                 </div>
-                <div class="grid grid-cols-1 gap-y-10">
-                    <h2
-                        class="text-2xl md:text-3xl font-bold text-center mt-10 md:mt-0 mb-5"
-                    >
-                        Some of our moments!
+            </div>
+        </section>
+        <section id="about-us">
+            <!-- Divider Bottom -->
+            <div class="svg-border" style="transform: rotate(180deg)">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
+                        class="fill-white"></path>
+                </svg>
+            </div>
+            <div class="max-w-6xl mx-auto mb-12 lg:p-7 py-3 px-7 lg:mt-10 mt-0">
+                <div class="grid lg:grid-cols-10 grid-cols-1">
+                    <div class="col-span-5 mx-auto lg:my-auto">
+                        <img src="./images/people/three_images.png" alt="Best motivational weekend"
+                            class="max-h-40 my-3" />
+                    </div>
+                    <div class="col-span-5 mx-auto lg:my-auto lg:text-left text-center">
+                        <h2 class="lg:mb-3 my-3 text-2xl font-bold mx-10">
+                            A little about us...
+                        </h2>
+                        <p class="text-lg max-w-2xl mx-10">
+                            BEST Lisboa is one of the 90 BEST Local groups
+                            that exist all over Europe. We are a non
+                            governmental, apolitical organization that has
+                            the mission of Empowering Diversity and
+                            Developing Students. Our 5 values: flexibility,
+                            friendship, fun, progress and learning are the
+                            principles that guide our members also known as
+                            BESTies.
+                        </p>
+                    </div>
+                </div>
+                <div class="grid lg:grid-cols-10 grid-cols-1 lg:mt-40 mt-28">
+                    <div class="col-span-5 mx-auto lg:my-auto lg:hidden">
+                        <img src="./images/logos/three_logos.png" alt="best events" class="max-h-40 my-3" />
+                    </div>
+                    <div class="col-span-5 mx-auto lg:my-auto lg:text-left text-center">
+                        <h2 class="lg:mb-3 my-3 text-2xl font-bold mx-10">
+                            Our events
+                        </h2>
+                        <p class="text-lg max-w-2xl mx-10">
+                            BEST organises a set of events that mainly focus
+                            on providing unique experiences to technology
+                            students and on complementing their education in
+                            the perspective that these experiences would
+                            help them in their future career path.
+                            Furthermore, BEST events also have a very strong
+                            international component that cultivates a spirit
+                            of integration and diversity.
+                        </p>
+                    </div>
+                    <div class="col-span-5 mx-auto lg:my-auto hidden lg:block">
+                        <img src="./images/logos/three_logos.png" alt="Best motivational weekend" class="" />
+                    </div>
+                </div>
+            </div>
+            <!-- Divider Top -->
+            <div class="svg-border">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
+                        class="fill-white"></path>
+                </svg>
+            </div>
+        </section>
+        <section id="social-media" class="bg-white">
+            <div
+                class="max-w-5xl mx-auto grid lg:grid-cols-2 grid-cols-1 items-center content-evenly justify-items-center">
+                <div class="my-4">
+                    <h2 class="text-green-500 text-2xl font-semibold">
+                        Follow us in our social media:
                     </h2>
-                    <div
-                        class="mx-auto md:max-w-xl sm:max-w-md max-w-sm max-h-max"
-                    >
-                        <!-- Carousel -->
-                        <!-- Swiper -->
+                </div>
+                <div class="my-4 grid grid-cols-3 items-center">
+                    <a href="https://www.facebook.com/bestlisboa">
+                        <img src="./images/logos/facebook.png" alt="facebook"
+                            class="w-32 hover:scale-105 transition-transform" />
+                    </a>
+                    <a href="https://www.instagram.com/best.lisbon/">
+                        <img src="./images/logos/instagram.png" alt="instagram"
+                            class="w-32 hover:scale-105 transition-transform" />
+                    </a>
+                    <a href="https://www.linkedin.com/company/best-lisboa/mycompany/">
+                        <img src="./images/logos/linkedin.png" alt="linkdin"
+                            class="w-32 hover:scale-105 transition-transform" />
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="our-moments">
+            <!-- Divider Bottom -->
+            <div class="svg-border" style="transform: rotate(180deg)">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
+                        class="fill-white"></path>
+                </svg>
+            </div>
+            <div class="grid grid-cols-1 gap-y-10">
+                <h2 class="text-2xl md:text-3xl font-bold text-center mt-10 md:mt-0 mb-5">
+                    Some of our moments!
+                </h2>
+                <div class="mx-auto md:max-w-xl sm:max-w-md max-w-sm max-h-max">
+                    <!-- Carousel -->
+                    <!-- Swiper -->
 
-                        <!-- Slider main container -->
-                        <div class="swiper">
-                            <!-- Additional required wrapper -->
-                            <div class="swiper-wrapper">
-                                <!-- Slides -->
-                                <div class="swiper-slide">
-                                    <img
-                                        src="./images/change.png"
-                                        alt="Best motivational weekend"
-                                        class="object-cover border-4 rounded-xl"
-                                    />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img
-                                        src="./images/change.png"
-                                        alt="Best motivational weekend"
-                                        class="object-cover border-4 rounded-xl"
-                                    />
-                                </div>
-                                <div class="swiper-slide">
-                                    <img
-                                        src="./images/change.png"
-                                        alt="Best motivational weekend"
-                                        class="object-cover border-4 rounded-xl"
-                                    />
-                                </div>
+                    <!-- Slider main container -->
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <img src="./images/change.png" alt="Best motivational weekend"
+                                    class="object-cover border-4 rounded-xl" />
                             </div>
-                            <div class="swiper-scrollbar"></div>
+                            <div class="swiper-slide">
+                                <img src="./images/change.png" alt="Best motivational weekend"
+                                    class="object-cover border-4 rounded-xl" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/change.png" alt="Best motivational weekend"
+                                    class="object-cover border-4 rounded-xl" />
+                            </div>
                         </div>
+                        <div class="swiper-scrollbar"></div>
+                    </div>
 
-                        <!-- End Of Carousel -->
+                    <!-- End Of Carousel -->
 
-                        <!-- <img
+                    <!-- <img
                             src="./images/change.png"
                             alt="Best motivational weekend"
                             class="object-cover h-80 border-4 rounded-xl"
@@ -428,209 +278,78 @@
                         <h4 class="mt-6 text-xl font-semibold text-center">
                             Autumn motivational weekend 2021
                         </h4> -->
-                    </div>
                 </div>
-            </section>
-            <!-- Divider Top -->
-            <div class="svg-border">
-                <svg
-                    data-name="Layer 1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 1200 120"
-                    preserveAspectRatio="none"
-                >
-                    <path
-                        d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
-                        class="fill-white"
-                    ></path>
-                </svg>
             </div>
-        </main>
-        <footer>
-            <div class="bg-white text-center lg:text-left">
-                <div class="container p-6 px-20 text-gray-600 mx-auto">
-                    <div class="grid lg:grid-cols-2 gap-4 items-center">
-                        <div class="my-6 md:mb-0">
-                            <div class="text-center md:text-left">
-                                <h3 class="text-xl font-semibold">
-                                    Contact us
-                                </h3>
-                                <a
-                                    class="flex items-center space-x-2"
-                                    href="mailto:lisbon@best-eu.org"
-                                >
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        class="h-5 w-5 inline"
-                                        viewBox="0 0 20 20"
-                                        fill="currentColor"
-                                    >
-                                        <path
-                                            d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
-                                        />
-                                        <path
-                                            d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
-                                        />
-                                    </svg>
-                                    <p>lisbon@best-eu.org</p>
-                                </a>
-                                <a
-                                    class="flex items-center space-x-2"
-                                    href="https://goo.gl/maps/tkWRJizZUSAqjceX6"
-                                >
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        class="h-5 w-5"
-                                        viewBox="0 0 20 20"
-                                        fill="currentColor"
-                                    >
-                                        <path
-                                            fill-rule="evenodd"
-                                            d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-                                            clip-rule="evenodd"
-                                        />
-                                    </svg>
-                                    <p>
-                                        Avenida Rovisco Pais, 1049-001 Lisboa,
-                                        Portugal
-                                    </p>
-                                </a>
-                            </div>
+        </section>
+        <!-- Divider Top -->
+        <div class="svg-border">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
+                    class="fill-white"></path>
+            </svg>
+        </div>
+    </main>
+    <footer>
+        <div class="bg-white text-center lg:text-left">
+            <div class="container px-20 text-gray-600 mx-auto p-6 ">
+                <div class="grid lg:grid-cols-2 gap-4 items-center border-b-2 pb-10 border-gray-400">
+                    <div class="my-6 md:mb-0">
+                        <div class="text-center md:text-left">
+                            <h3 class="text-xl font-semibold">
+                                Contact us
+                            </h3>
+                            <a class="flex items-center space-x-2" href="mailto:lisbon@best-eu.org">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                                </svg>
+                                <p>lisbon@best-eu.org</p>
+                            </a>
+                            <a class="flex items-center space-x-2" href="https://goo.gl/maps/tkWRJizZUSAqjceX6">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                <p>
+                                    Avenida Rovisco Pais, 1049-001 Lisboa,
+                                    Portugal
+                                </p>
+                            </a>
                         </div>
-                        <div class="my-6 md:mb-0">
-                            <div class="">
-                                <div
-                                    class="flex flex-row-reverse items-center gap-x-5"
-                                >
-                                    <a
-                                        href="https://best.tecnico.ulisboa.pt/ebec2022/"
-                                        class="flex-none"
-                                    >
-                                        <img
-                                            src="./images/logos/ebec.png"
-                                            alt="ebec lisbon"
-                                            class="w-24 hover:scale-105 transition-transform"
-                                        />
-                                    </a>
-                                    <a
-                                        href="https://www.instagram.com/best.lisbon/"
-                                        class="flex-none"
-                                    >
-                                        <img
-                                            src="./images/logos/courses.png"
-                                            alt="best courses"
-                                            class="w-28 hover:scale-105 transition-transform"
-                                        />
-                                    </a>
-                                    <a
-                                        href="https://best.tecnico.ulisboa.pt/courses/"
-                                        class="flex-none"
-                                    >
-                                        <img
-                                            src="./images/logos/BIV_Logo_azul_semfundo.png"
-                                            alt="best inside view"
-                                            class="w-16 hover:scale-105 transition-transform"
-                                        />
-                                    </a>
-                                </div>
+                    </div>
+                    <div class="my-6 md:mb-0">
+                        <div class="">
+                            <div class="flex flex-row-reverse items-center gap-x-5">
+                                <a href="https://best.tecnico.ulisboa.pt/ebec2022/" class="flex-none">
+                                    <img src="./images/logos/ebec.png" alt="ebec lisbon"
+                                        class="w-24 hover:scale-105 transition-transform" />
+                                </a>
+                                <a href="https://www.instagram.com/best.lisbon/" class="flex-none">
+                                    <img src="./images/logos/courses.png" alt="best courses"
+                                        class="w-28 hover:scale-105 transition-transform" />
+                                </a>
+                                <a href="https://best.tecnico.ulisboa.pt/courses/" class="flex-none">
+                                    <img src="./images/logos/BIV_Logo_azul_semfundo.png" alt="best inside view"
+                                        class="w-16 hover:scale-105 transition-transform" />
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </footer>
-        <!-- <div
-            class="max-w-7xl mx-auto p-4 grid grid-cols-1 md:grid-cols-3 border-y-gray-600"
-        >
-            <div class="text-center md:text-left">
-                <h3 class="text-xl font-semibold">Contact us</h3>
-                <a
-                    class="flex items-center space-x-2"
-                    href="mailto:lisbon@best-eu.org"
-                >
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5 inline"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                    >
-                        <path
-                            d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
-                        />
-                        <path
-                            d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
-                        />
-                    </svg>
-                    <p>lisbon@best-eu.org</p>
-                </a>
-                <a
-                    class="flex items-center space-x-2"
-                    href="https://goo.gl/maps/tkWRJizZUSAqjceX6"
-                >
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                    >
-                        <path
-                            fill-rule="evenodd"
-                            d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-                            clip-rule="evenodd"
-                        />
-                    </svg>
-                    <p>
-                        Avenida Rovisco Pais, 1049-001 Lisboa, Portugal
-                    </p>
-                </a>
-            </div>
-            <div class="">
-                <img
-                    src="./images/logos/BEST_Lisbon_color.png"
-                    alt="best lisbon"
-                    class="h-20 mx-auto my-auto"
-                />
-            </div>
-            <div class="">
-                <div
-                    class="grid grid-cols-11 grid-flow-row-dense items-center justify-center"
-                >
-                    <a
-                        href="https://best.tecnico.ulisboa.pt/ebec2022/"
-                        class="col-span-4"
-                    >
-                        <img
-                            src="./images/logos/ebec.png"
-                            alt="ebec lisbon"
-                            class="w-24 hover:scale-105 transition-transform"
-                        />
-                    </a>
-                    <a
-                        href="https://www.instagram.com/best.lisbon/"
-                        class="col-span-4"
-                    >
-                        <img
-                            src="./images/logos/courses.png"
-                            alt="best courses"
-                            class="w-28 hover:scale-105 transition-transform"
-                        />
-                    </a>
-                    <a
-                        href="https://best.tecnico.ulisboa.pt/courses/"
-                        class="col-span-3"
-                    >
-                        <img
-                            src="./images/logos/BIV_Logo_azul_semfundo.png"
-                            alt="best inside view"
-                            class="w-16 hover:scale-105 transition-transform"
-                        />
-                    </a>
+                <div class="mx-auto text-gray-500">
+                    <p class="text-center">© 2021 BEST Lisboa. All rights reserved.</p>
                 </div>
             </div>
-        </div> -->
-        <!-- Scripts -->
-        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-        <script src="./js/button_events.js"></script>
-        <script src="./js/carousel.js"></script>
-    </body>
+        </div>
+    </footer>
+    <!-- Scripts -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/button_events.js"></script>
+    <script src="./js/carousel.js"></script>
+</body>
+
 </html>
