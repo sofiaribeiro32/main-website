@@ -1,433 +1,373 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!-- CSS -->
-        <link href="./css/styles.css" rel="stylesheet" />
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!--Fonts-->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-            rel="stylesheet"
-        />
+    <!-- CSS -->
+    <link href="./css/styles.css" rel="stylesheet" />
 
-        <title>Best Lisbon - About Us</title>
-    </head>
-    <body class="bg-gradient-to-r from-green-500 to-emerald-500 text-white">
-        <!-- Navigation Bar and Side Bar -->
-        <nav>
-            <div
-                class="max-w-7xl p-7 mx-auto lg:my-7 my-2 text-xl font-semibold"
-            >
-                <div class="flex justify-between items-center">
-                    <div>
-                        <a href="./index.html"
-                            ><img
-                                class="w-36"
-                                src="./images/logos/best_lisbon.png"
-                                alt=""
-                        /></a>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+
+    <title>Best Lisbon - About Us</title>
+</head>
+
+<body class="bg-gradient-to-r from-green-500 to-emerald-500 text-white">
+    <!-- Navigation Bar and Side Bar -->
+    <nav>
+        <div class="max-w-7xl p-7 mx-auto lg:my-7 my-2 text-xl font-semibold">
+            <div class="flex justify-between items-center">
+                <div>
+                    <a href="./index.html"><img class="w-36" src="./images/logos/best_lisbon.png" alt="" /></a>
+                </div>
+                <div class="hidden lg:flex space-x-12 items-center">
+                    <div class="hover:text-gray-200">
+                        <a href="./index.html">Home</a>
                     </div>
-                    <div class="hidden lg:flex space-x-12 items-center">
-                        <div class="hover:text-gray-200">
-                            <a href="./index.html">Home</a>
-                        </div>
-                        <div
-                            class="hover:text-gray-200 border-b-4 rounded-b-sm border-white hover:border-gray-200"
-                        >
-                            <a href="./about_us.html">About Us</a>
-                        </div>
-                        <div class="hover:text-gray-200">
-                            <a href="./team.html">Team</a>
-                        </div>
-                        <div
-                            class="bg-white rounded-md py-1 px-3 hover:scale-105 transition-transform"
-                        >
-                            <a
-                                class="text-emerald-500 flex items-center space-x-2"
-                                href="./index.html"
-                            >
-                                <p>Our Events</p>
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    class="h-7 w-7 fill-emerald-500"
-                                    viewBox="0 0 20 20"
-                                >
-                                    <path
-                                        fill-rule="evenodd"
-                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                        cdivp-rule="evenodd"
-                                    />
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="hover:scale-105 transition-transform">
-                            <a href="./index.html"
-                                ><img
-                                    class="w-10 rounded-sm"
-                                    src="./images/flags/eng_flag.png"
-                                    alt=""
-                            /></a>
-                        </div>
+                    <div class="hover:text-gray-200 border-b-4 rounded-b-sm border-white hover:border-gray-200">
+                        <a href="./about_us.html">About Us</a>
                     </div>
-                    <!--Mobile Button-->
-                    <div
-                        class="lg:hidden hover:scale-105 transition-transform"
-                        onclick="toggleSideBar()"
-                    >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="h-10 w-10 fill-white ml-20"
-                            viewBox="0 0 20 20"
-                            fill="currentColor"
-                        >
-                            <path
-                                fill-rule="evenodd"
-                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                                clip-rule="evenodd"
-                            />
-                        </svg>
+                    <div class="hover:text-gray-200">
+                        <a href="./team.html">Team</a>
+                    </div>
+                    <div class="bg-white rounded-md py-1 px-3 hover:scale-105 transition-transform">
+                        <a class="text-emerald-500 flex items-center space-x-2" href="./index.html">
+                            <p>Our Events</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 fill-emerald-500"
+                                viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                    cdivp-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="hover:scale-105 transition-transform">
+                        <a href="./index.html"><img class="w-10 rounded-sm" src="./images/flags/eng_flag.png"
+                                alt="" /></a>
+                    </div>
+                </div>
+                <!--Mobile Button-->
+                <div class="lg:hidden hover:scale-105 transition-transform" onclick="toggleSideBar()">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 fill-white ml-20" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!--SideBar-->
+        <div id="sidebar"
+            class="fixed overflow-hidden top-0 bottom-0 w-0 bg-white overflow-y-auto rounded origin-left duration-200">
+            <div class="duration-100">
+                <img src="./images/logos/best_lisbon_green.png" alt="best" class="w-36 mx-7 lg:my-14 my-9" />
+
+                <ul class="text-emerald-500 font-semibold text-2xl ml-8">
+                    <li class="mb-8 px-3 hover:text-green-500">
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li class="mb-8 px-3 hover:text-green-500">
+                        <a href="./index.html">About Us</a>
+                    </li>
+                    <li class="mb-8 px-3 hover:text-green-500">
+                        <a href="./index.html">Team</a>
+                    </li>
+                    <li class="bg-emerald-500 rounded-md py-1 px-3 hover:scale-105 transition-transform w-52">
+                        <a class="text-white flex items-center space-x-2" href="./index.html">
+                            <p>Our Events</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 fill-white" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                    cdivp-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <!-- Flag -->
+                <div class="hover:scale-105 transition-transform bottom-10 left-9 absolute">
+                    <a href="./index.html"><img class="w-10 rounded-sm" src="./images/flags/eng_flag.png" alt="" /></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section id="BEST-history">
+            <div class="max-w-6xl mx-auto mt-20">
+                <div class="grid lg:grid-cols-10 grid-cols-1">
+                    <div class="col-span-5 mx-auto lg:my-auto lg:text-left text-center">
+                        <h2 class="lg:mb-3 my-3 text-2xl font-bold mx-10">
+                            BEST’s history!
+                        </h2>
+                        <p class="text-lg max-w-2xl mx-10">
+                            BEST is the acronym for Board of European
+                            Students of Technology. We are a
+                            non-governmental, apolitical and non-profit
+                            organization designed and created by technology
+                            students from all over Europe. Formed in 1989
+                            with the aim of strengthening relations between
+                            students, universities and companies, we are a
+                            dynamic and growing organization. Our main
+                            activities are based on providing complementary
+                            education, career support and educational
+                            involvement.
+                        </p>
+                    </div>
+                    <div class="col-span-5 mx-auto lg:my-auto my-12 lg:p-0 p-6">
+                        <img src="./images/europe_map.png" alt="Best motivational weekend"
+                            class="max-w-md w-full h-auto object-cover" />
                     </div>
                 </div>
             </div>
-
-            <!--SideBar-->
-            <div
-                id="sidebar"
-                class="fixed overflow-hidden top-0 bottom-0 w-0 bg-white overflow-y-auto rounded origin-left duration-200"
-            >
-                <div class="duration-100">
-                    <img
-                        src="./images/logos/best_lisbon_green.png"
-                        alt="best"
-                        class="w-36 mx-7 lg:my-14 my-9"
-                    />
-
-                    <ul class="text-emerald-500 font-semibold text-2xl ml-8">
-                        <li class="mb-8 px-3 hover:text-green-500">
-                            <a href="./index.html">Home</a>
-                        </li>
-                        <li class="mb-8 px-3 hover:text-green-500">
-                            <a href="./index.html">About Us</a>
-                        </li>
-                        <li class="mb-8 px-3 hover:text-green-500">
-                            <a href="./index.html">Team</a>
-                        </li>
-                        <li
-                            class="bg-emerald-500 rounded-md py-1 px-3 hover:scale-105 transition-transform w-52"
-                        >
-                            <a
-                                class="text-white flex items-center space-x-2"
-                                href="./index.html"
-                            >
-                                <p>Our Events</p>
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    class="h-7 w-7 fill-white"
-                                    viewBox="0 0 20 20"
-                                >
-                                    <path
-                                        fill-rule="evenodd"
-                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                        cdivp-rule="evenodd"
-                                    />
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                    <!-- Flag -->
+            <!-- Divider Top -->
+            <div class="svg-border">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
+                        class="fill-white"></path>
+                </svg>
+            </div>
+        </section>
+        <section id="best-in-numbers">
+            <div class="bg-white">
+                <h2 class="text-center text-green-500 text-3xl font-semibold py-4">
+                    BEST in numbers
+                </h2>
+                <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 text-center justify-items-center">
+                    <div class="bg-gradient-to-r from-amber-400 to-amber-300 py-6 px-16 m-6 md:m-10 rounded-md w-60">
+                        <h1 class="text-4xl font-bold">90</h1>
+                        <h1 class="text-2xl font-bold">Groups</h1>
+                    </div>
+                    <div class="bg-gradient-to-r from-blue-500 to-blue-400 py-6 px-16 m-6 md:m-10 rounded-md w-60">
+                        <h1 class="text-4xl font-bold">31</h1>
+                        <h1 class="text-2xl font-bold">Countries</h1>
+                    </div>
                     <div
-                        class="hover:scale-105 transition-transform bottom-10 left-9 absolute"
-                    >
-                        <a href="./index.html"
-                            ><img
-                                class="w-10 rounded-sm"
-                                src="./images/flags/eng_flag.png"
-                                alt=""
-                        /></a>
+                        class="bg-gradient-to-r from-orange-500 to-orange-400 py-6 px-16 m-6 md:m-10 self-center rounded-md w-60">
+                        <h1 class="text-4xl font-bold">+3000</h1>
+                        <h1 class="text-2xl font-bold">Members</h1>
                     </div>
                 </div>
             </div>
-        </nav>
-        <main>
-            <section id="BEST-history">
-                <div class="max-w-6xl mx-auto mt-20">
-                    <div class="grid lg:grid-cols-10 grid-cols-1">
-                        <div
-                            class="col-span-5 mx-auto lg:my-auto lg:text-left text-center"
-                        >
-                            <h2 class="lg:mb-3 my-3 text-2xl font-bold mx-10">
-                                BEST’s history!
-                            </h2>
-                            <p class="text-lg max-w-2xl mx-10">
-                                BEST is the acronym for Board of European
-                                Students of Technology. We are a
-                                non-governmental, apolitical and non-profit
-                                organization designed and created by technology
-                                students from all over Europe. Formed in 1989
-                                with the aim of strengthening relations between
-                                students, universities and companies, we are a
-                                dynamic and growing organization. Our main
-                                activities are based on providing complementary
-                                education, career support and educational
-                                involvement.
-                            </p>
-                        </div>
-                        <div
-                            class="col-span-5 mx-auto lg:my-auto my-12 lg:p-0 p-6"
-                        >
-                            <img
-                                src="./images/europe_map.png"
-                                alt="Best motivational weekend"
-                                class="max-w-md w-full h-auto object-cover"
-                            />
-                        </div>
+            <!-- Divider Bottom -->
+            <div class="svg-border" style="transform: rotate(180deg)">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
+                        class="fill-white"></path>
+                </svg>
+            </div>
+        </section>
+        <section id="vision-and-mission">
+            <div class="max-w-6xl mx-auto mt-2 md:mt-10">
+                <div class="grid lg:grid-cols-10 grid-cols-1">
+                    <div class="col-span-5 mx-auto lg:my-auto my-12 lg:p-0 p-6">
+                        <img src="./images/vision.png" alt="BEST Vision" class="max-w-md w-full h-auto object-cover" />
+                        <!-- <a href="http://www.freepik.com">Designed by pch.vector / Freepik</a> -->
+                    </div>
+                    <div class="col-span-5 mx-auto lg:my-auto lg:text-left text-center">
+                        <h2 class="lg:mb-3 my-3 text-2xl font-bold mx-10">
+                            BEST’s history!
+                        </h2>
+                        <p class="text-lg max-w-2xl mx-10">
+                            BEST is the acronym for Board of European
+                            Students of Technology. We are a
+                            non-governmental, apolitical and non-profit
+                            organization designed and created by technology
+                            students from all over Europe. Formed in 1989
+                            with the aim of strengthening relations between
+                            students, universities and companies, we are a
+                            dynamic and growing organization. Our main
+                            activities are based on providing complementary
+                            education, career support and educational
+                            involvement.
+                        </p>
                     </div>
                 </div>
-                <!-- Divider Top -->
-                <div class="svg-border">
-                    <svg
-                        data-name="Layer 1"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 1200 120"
-                        preserveAspectRatio="none"
-                    >
-                        <path
-                            d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
-                            class="fill-white"
-                        ></path>
-                    </svg>
-                </div>
-            </section>
-            <section id="best-in-numbers">
-                <div class="bg-white">
-                    <h2
-                        class="text-center text-green-500 text-3xl font-semibold py-4"
-                    >
-                        BEST in numbers
-                    </h2>
+            </div>
+            <!-- Divider Top -->
+            <div class="svg-border">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
+                        class="fill-white"></path>
+                </svg>
+            </div>
+        </section>
+        <section id="best-spirit">
+            <div class="bg-white text-white">
+                <h2 class="text-center text-green-500 text-3xl font-semibold py-4">
+                    BEST Spirit
+                </h2>
+                <div class="max-w-5xl mx-auto grid grid-cols-4 md:grid-cols-12 text-center justify-items-center">
                     <div
-                        class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 text-center justify-items-center"
-                    >
-                        <div
-                            class="bg-gradient-to-r from-amber-400 to-amber-300 py-6 px-16 m-6 md:m-10 rounded-md w-60"
-                        >
-                            <h1 class="text-4xl font-bold">90</h1>
-                            <h1 class="text-2xl font-bold">Groups</h1>
-                        </div>
-                        <div
-                            class="bg-gradient-to-r from-blue-500 to-blue-400 py-6 px-16 m-6 md:m-10 rounded-md w-60"
-                        >
-                            <h1 class="text-4xl font-bold">31</h1>
-                            <h1 class="text-2xl font-bold">Countries</h1>
-                        </div>
-                        <div
-                            class="bg-gradient-to-r from-orange-500 to-orange-400 py-6 px-16 m-6 md:m-10 self-center rounded-md w-60"
-                        >
-                            <h1 class="text-4xl font-bold">+3000</h1>
-                            <h1 class="text-2xl font-bold">Members</h1>
-                        </div>
+                        class="bg-gradient-to-r from-amber-400 to-amber-300 py-6 px-2 m-6 md:m-10 rounded-md w-64 lg:w-72 col-span-4">
+                        <h1 class="text-xl font-bold">Flexibility</h1>
+                        <h1 class="text-sm lg:text-base font-normal">
+                            We seek the ability to make changes and deal
+                            with changing conditions. We are open to
+                            everything new. We value and raise the ability
+                            of being mobile and to quickly respond to
+                            changes in the environment or any other
+                            obstacles that we face.
+                        </h1>
                     </div>
-                </div>
-                <!-- Divider Bottom -->
-                <div class="svg-border" style="transform: rotate(180deg)">
-                    <svg
-                        data-name="Layer 1"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 1200 120"
-                        preserveAspectRatio="none"
-                    >
-                        <path
-                            d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
-                            class="fill-white"
-                        ></path>
-                    </svg>
-                </div>
-            </section>
-            <section id="vision-and-mission">
-                <div class="max-w-6xl mx-auto mt-2 md:mt-10">
-                    <div class="grid lg:grid-cols-10 grid-cols-1">
-                        <div
-                            class="col-span-5 mx-auto lg:my-auto my-12 lg:p-0 p-6"
-                        >
-                            <img
-                                src="./images/vision.png"
-                                alt="BEST Vision"
-                                class="max-w-md w-full h-auto object-cover"
-                            />
-                            <!-- <a href="http://www.freepik.com">Designed by pch.vector / Freepik</a> -->
-                        </div>
-                        <div
-                            class="col-span-5 mx-auto lg:my-auto lg:text-left text-center"
-                        >
-                            <h2 class="lg:mb-3 my-3 text-2xl font-bold mx-10">
-                                BEST’s history!
-                            </h2>
-                            <p class="text-lg max-w-2xl mx-10">
-                                BEST is the acronym for Board of European
-                                Students of Technology. We are a
-                                non-governmental, apolitical and non-profit
-                                organization designed and created by technology
-                                students from all over Europe. Formed in 1989
-                                with the aim of strengthening relations between
-                                students, universities and companies, we are a
-                                dynamic and growing organization. Our main
-                                activities are based on providing complementary
-                                education, career support and educational
-                                involvement.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Divider Top -->
-                <div class="svg-border">
-                    <svg
-                        data-name="Layer 1"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 1200 120"
-                        preserveAspectRatio="none"
-                    >
-                        <path
-                            d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
-                            class="fill-white"
-                        ></path>
-                    </svg>
-                </div>
-            </section>
-            <section id="best-spirit">
-                <div class="bg-white text-white">
-                    <h2
-                        class="text-center text-green-500 text-3xl font-semibold py-4"
-                    >
-                        BEST Spirit
-                    </h2>
                     <div
-                        class="max-w-5xl mx-auto grid grid-cols-4 md:grid-cols-12 text-center justify-items-center"
-                    >
-                        <div
-                            class="bg-gradient-to-r from-amber-400 to-amber-300 py-6 px-2 m-6 md:m-10 rounded-md w-64 lg:w-72 col-span-4"
-                        >
-                            <h1 class="text-xl font-bold">Flexibility</h1>
-                            <h1 class="text-sm lg:text-base font-normal">
-                                We seek the ability to make changes and deal
-                                with changing conditions. We are open to
-                                everything new. We value and raise the ability
-                                of being mobile and to quickly respond to
-                                changes in the environment or any other
-                                obstacles that we face.
-                            </h1>
+                        class="bg-gradient-to-r from-blue-500 to-blue-400 py-6 px-2 m-6 md:m-10 rounded-md w-64 lg:w-72 col-span-4">
+                        <h1 class="text-xl font-bold">Frendship</h1>
+                        <h1 class="text-sm lg:text-base font-normal">
+                            We build good relationships in which people
+                            help, support and care for one another. We value
+                            good personal relations and teamwork. We focus
+                            on each person involved in our activities and in
+                            this way we create synergy.
+                        </h1>
+                    </div>
+                    <div
+                        class="bg-gradient-to-r from-orange-500 to-orange-400 py-6 px-2 m-6 md:m-10 rounded-md w-64 lg:w-72 col-span-4">
+                        <h1 class="text-xl font-bold">Fun</h1>
+                        <h1 class="text-sm lg:text-base font-normal">
+                            We enjoy everything we do. We value the positive
+                            emotions of the people involved in our actions.
+                            We strive to make our activities enjoyable to
+                            everybody who is connected to them. We act with
+                            passion and strive to share this passion with
+                            people around us.
+                        </h1>
+                    </div>
+                    <div class="col-span-2"></div>
+                    <div
+                        class="bg-gradient-to-r from-pink-400 to-pink-500 py-6 px-2 m-6 md:m-10 rounded-md w-64 lg:w-72 col-span-4">
+                        <h1 class="text-xl font-bold">Improvement</h1>
+                        <h1 class="text-sm lg:text-base font-normal">
+                            We strive to continuously improve the standards
+                            in everything we do. We use all our creativity
+                            to enhance the way we work. This is to guarantee
+                            the constant development of our actions.
+                        </h1>
+                    </div>
+                    <div
+                        class="bg-gradient-to-r from-green-400 to-green-500 py-6 px-2 m-6 md:m-10 rounded-md w-64 lg:w-72 col-span-4">
+                        <h1 class="text-xl font-bold">Learning</h1>
+                        <h1 class="text-sm lg:text-base font-normal">
+                            We gain skills and understanding through
+                            experience. We value everything we learn through
+                            the experience of being involved in our
+                            activities and we strive to learn as much as
+                            possible from every aspect of our work.
+                        </h1>
+                    </div>
+                    <div class="col-span-2"></div>
+                </div>
+            </div>
+            <!-- Divider Bottom -->
+            <div class="svg-border" style="transform: rotate(180deg)">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
+                        class="fill-white"></path>
+                </svg>
+            </div>
+        </section>
+        <section id="best-international">
+            <div class="max-w-3xl mx-auto p-10 text-center">
+                <h1 class="text-2xl md:text-3xl font-bold">
+                    Want to learn more?
+                </h1>
+                <h3 class="text-lg md:text-xl font-normal mt-8">
+                    Visit the BEST international website and discover all
+                    the opportunities that await you. You can also see what
+                    other Local Best Groups have been up to!
+                </h3>
+                <a href="https://www.best.eu.org/">
+                    <div
+                        class="py-3 px-12 mt-12 bg-white shadow w-72 rounded-lg mx-auto hover:scale-105 transition-transform">
+                        <h2 class="text-2xl md:text-3xl font-bold text-green-500">
+                            Click here!
+                        </h2>
+                    </div>
+                </a>
+            </div>
+            <!-- Divider Top -->
+            <div class="svg-border">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
+                        class="fill-white"></path>
+                </svg>
+            </div>
+        </section>
+        <footer>
+            <div class="bg-white text-center lg:text-left">
+                <div class="container px-20 text-gray-600 mx-auto p-6 ">
+                    <div class="grid lg:grid-cols-2 gap-4 items-center border-b-2 pb-10 border-gray-400">
+                        <div class="my-6 md:mb-0">
+                            <div class="text-center md:text-left">
+                                <h3 class="text-xl font-semibold my-4">
+                                    Contact us
+                                </h3>
+                                <a class="flex items-center space-x-2" href="mailto:lisbon@best-eu.org">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline" viewBox="0 0 20 20"
+                                        fill="currentColor">
+                                        <path
+                                            d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                                    </svg>
+                                    <p>lisbon@best-eu.org</p>
+                                </a>
+                                <a class="flex items-center space-x-2" href="https://goo.gl/maps/tkWRJizZUSAqjceX6">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                        fill="currentColor">
+                                        <path fill-rule="evenodd"
+                                            d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <p>
+                                        Avenida Rovisco Pais
+                                    </p>
+                                </a>
+                            </div>
                         </div>
-                        <div
-                            class="bg-gradient-to-r from-blue-500 to-blue-400 py-6 px-2 m-6 md:m-10 rounded-md w-64 lg:w-72 col-span-4"
-                        >
-                            <h1 class="text-xl font-bold">Frendship</h1>
-                            <h1 class="text-sm lg:text-base font-normal">
-                                We build good relationships in which people
-                                help, support and care for one another. We value
-                                good personal relations and teamwork. We focus
-                                on each person involved in our activities and in
-                                this way we create synergy.
-                            </h1>
+                        <div class="hidden lg:block my-6 md:mb-0">
+                            <div class="">
+                                <div class="flex lg:flex lg:flex-row-reverse items-center gap-x-5">
+                                    <a href="https://best.tecnico.ulisboa.pt/ebec2022/" class="flex-none">
+                                        <img src="./images/logos/ebec.png" alt="ebec lisbon"
+                                            class="w-24 hover:scale-105 transition-transform" />
+                                    </a>
+                                    <a href="https://www.instagram.com/best.lisbon/" class="flex-none">
+                                        <img src="./images/logos/courses.png" alt="best courses"
+                                            class="w-28 hover:scale-105 transition-transform" />
+                                    </a>
+                                    <a href="https://best.tecnico.ulisboa.pt/courses/" class="flex-none">
+                                        <img src="./images/logos/BIV_Logo_azul_semfundo.png" alt="best inside view"
+                                            class="w-16 hover:scale-105 transition-transform" />
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                        <div
-                            class="bg-gradient-to-r from-orange-500 to-orange-400 py-6 px-2 m-6 md:m-10 rounded-md w-64 lg:w-72 col-span-4"
-                        >
-                            <h1 class="text-xl font-bold">Fun</h1>
-                            <h1 class="text-sm lg:text-base font-normal">
-                                We enjoy everything we do. We value the positive
-                                emotions of the people involved in our actions.
-                                We strive to make our activities enjoyable to
-                                everybody who is connected to them. We act with
-                                passion and strive to share this passion with
-                                people around us.
-                            </h1>
-                        </div>
-                        <div class="col-span-2"></div>
-                        <div
-                            class="bg-gradient-to-r from-pink-400 to-pink-500 py-6 px-2 m-6 md:m-10 rounded-md w-64 lg:w-72 col-span-4"
-                        >
-                            <h1 class="text-xl font-bold">Improvement</h1>
-                            <h1 class="text-sm lg:text-base font-normal">
-                                We strive to continuously improve the standards
-                                in everything we do. We use all our creativity
-                                to enhance the way we work. This is to guarantee
-                                the constant development of our actions.
-                            </h1>
-                        </div>
-                        <div
-                            class="bg-gradient-to-r from-green-400 to-green-500 py-6 px-2 m-6 md:m-10 rounded-md w-64 lg:w-72 col-span-4"
-                        >
-                            <h1 class="text-xl font-bold">Learning</h1>
-                            <h1 class="text-sm lg:text-base font-normal">
-                                We gain skills and understanding through
-                                experience. We value everything we learn through
-                                the experience of being involved in our
-                                activities and we strive to learn as much as
-                                possible from every aspect of our work.
-                            </h1>
-                        </div>
-                        <div class="col-span-2"></div>
+                    </div>
+                    <div class="mx-auto text-gray-500">
+                        <p class="text-center">© 2021 BEST Lisboa. All rights reserved.</p>
                     </div>
                 </div>
-                <!-- Divider Bottom -->
-                <div class="svg-border" style="transform: rotate(180deg)">
-                    <svg
-                        data-name="Layer 1"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 1200 120"
-                        preserveAspectRatio="none"
-                    >
-                        <path
-                            d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
-                            class="fill-white"
-                        ></path>
-                    </svg>
-                </div>
-            </section>
-            <section id="best-international">
-                <div class="max-w-3xl mx-auto p-10 text-center">
-                    <h1 class="text-2xl md:text-3xl font-bold">
-                        Want to learn more?
-                    </h1>
-                    <h3 class="text-lg md:text-xl font-normal mt-8">
-                        Visit the BEST international website and discover all
-                        the opportunities that await you. You can also see what
-                        other Local Best Groups have been up to!
-                    </h3>
-                    <a href="https://www.best.eu.org/">
-                        <div
-                            class="py-3 px-12 mt-12 bg-white shadow w-72 rounded-lg mx-auto hover:scale-105 transition-transform"
-                        >
-                            <h2
-                                class="text-2xl md:text-3xl font-bold text-green-500"
-                            >
-                                Click here!
-                            </h2>
-                        </div>
-                    </a>
-                </div>
-                <!-- Divider Top -->
-                <div class="svg-border">
-                    <svg
-                        data-name="Layer 1"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 1200 120"
-                        preserveAspectRatio="none"
-                    >
-                        <path
-                            d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
-                            class="fill-white"
-                        ></path>
-                    </svg>
-                </div>
-            </section>
-            <footer></footer>
-        </main>
-        <!-- Scripts -->
-        <script src="./js/button_events.js"></script>
-    </body>
+            </div>
+        </footer>
+    </main>
+    <!-- Scripts -->
+    <script src="./js/button_events.js"></script>
+</body>
+
 </html>
