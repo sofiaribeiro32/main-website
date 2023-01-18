@@ -27,3 +27,29 @@ function toggleSideBar() {
         return;
     }
 }
+
+function toggleDropdown() {
+    let element = document.getElementById("dropdown");
+    if(element.classList.contains("hidden")){
+        element.classList.remove("hidden");
+        element.classList.add("flex");
+        return;
+    }else if(element.classList.contains("flex")){
+        element.classList.remove("flex");
+        element.classList.add("hidden");
+        return;
+    }
+}
+
+function toggleDropdownSide() {
+    let element = document.getElementById("dropdownside");
+    if(element.classList.contains("hidden")){
+        element.classList.remove("hidden");
+        element.classList.add("flex");
+        return;
+    }else if(element.classList.contains("flex")){
+        element.classList.remove("flex");
+        element.classList.add("hidden");
+        return;
+    }
+}
