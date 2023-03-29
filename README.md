@@ -1,4 +1,4 @@
-# BEST Lisbon Website. Restructured in 2022.
+# BEST--course-23. Restructured in 2023.
 
 ## How to use?
 
